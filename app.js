@@ -1,4 +1,5 @@
 const container = document.getElementById("container");
+document.getElementById("grid-item").mouseover = mouseOver
 
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
@@ -12,7 +13,9 @@ function makeRows(rows, cols) {
 
 makeRows(16, 16);
 
-function push() {
-    document.getElementById("cell").classList.toggle('blue');
-  }
-push();
+function mouseOver(event) {
+  document.querySelector('grid-item').style.backgroundColor = "rgba(241,63,247,1) "
+}
+
+mouseOver;
+//Need to have mouse-over/hover
