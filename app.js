@@ -1,5 +1,5 @@
 const container = document.getElementById("container");
-document.getElementById("grid-item").mouseover = mouseOver
+
 
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
